@@ -1,0 +1,135 @@
+.precios {
+    padding: 3rem 1rem;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  
+  .toggle-precio {
+    margin-bottom: 2rem;
+  }
+  
+  .switch {
+    display: inline-flex;
+    align-items: center;
+    background: #f5534f;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    gap: 1rem;
+  }
+  
+  .switch .slider {
+    width: 50px;
+    height: 25px;
+    background: white;
+    border-radius: 30px;
+    position: relative;
+  }
+  
+  #switch-precio:checked + .switch .slider::before {
+    transform: translateX(25px);
+  }
+  
+  .switch .slider::before {
+    content: '';
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background: #f5534f;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+    transition: 0.3s ease;
+  }
+  
+  .tabla-planes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .plan {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 280px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  
+  .plan.destacado {
+    border: 2px solid #f5534f;
+  }
+  
+  .plan h3 {
+    color: #f5534f;
+  }
+  
+  .plan .precio {
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: bold;
+  }
+  
+  .plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .plan li {
+    margin: 0.5rem 0;
+    position: relative;
+  }
+  
+  /* Tooltips */
+  .tooltip[data-tooltip] {
+    position: relative;
+    cursor: help;
+  }
+  
+  .tooltip[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 0.4rem 0.7rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip[data-tooltip]:hover::after {
+    opacity: 1;
+  }
+  
+  /* Botón */
+  .plan button {
+    background: #f5534f;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .plan button:hover {
+    background: #d4403c;
+  }
+  

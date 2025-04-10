@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog VitalFit</title>
+  <link rel="stylesheet" href="/css/style_home.css" />
+  <link rel="stylesheet" href="/css/style_blog.css">
+  <script src="/js/reveal.js"></script>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <!--logo_______________________________________________________________-->
+    <div class="logo" aria-label="Logo de VitalFit">
+        <svg width="60" height="60" viewBox="0 0 100 100" class="icono">
+            <rect x="10" y="40" width="20" height="20" rx="5" fill="currentColor" />
+            <rect x="35" y="45" width="30" height="10" rx="2" fill="currentColor" />
+            <rect x="70" y="40" width="20" height="20" rx="5" fill="currentColor" />
+        </svg>
+        <h1>Vital<span>Fit</span></h1>
+    </div>
+    <!--___________________________________________________________________-->
+    <nav>
+      <ul class="menu">
+        <li><a href="home.html">Inicio</a></li>
+    
+        <li class="submenu">
+          <a href="clases.html">Clases</a>
+          <ul class="dropdown">
+            <li><a href="#">Yoga</a></li>
+            <li><a href="#">Pilates</a></li>
+            <li><a href="#">Flexibilidad</a></li>
+            <li><a href="#">Barre</a></li>
+            <li><a href="#">Cardio</a></li>
+          </ul>
+        </li>
+    
+        <li><a href="entrenadores.html">Entrenadores</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="blog">
+    <h2>Blog VitalFit</h2>
+    <p>Queremos que te sientas acompañado en todo momento. ¡Compartinos algo!</p>
+  <input type="radio" id="general" name="tag" checked>
+  <input type="radio" id="alimentacion" name="tag">
+  <input type="radio" id="Tips" name="tag">
+  <input type="radio" id="animos" name="tag">
+
+  <section class="blog-filtros">
+    <div class="tags">
+      <label for="general">Todos</label>
+      <label for="alimentacion">Comer Sano</label>
+      <label for="Tips">Tips</label>
+      <label for="animos">animos</label>
+    </div>
+
+    <div class="grid-container">
+
+        <article class="card alimentacion">
+            <h2>formar un hábito</h2>
+            <p>Incorporá chía, kale y otros aliados nutricionales.</p></article>
+
+        <article class="card Tips">
+            <h2>Rendí al máximo sin salir de casa.</h2>
+            <p>Sabias que podes entrenar desde cas?</p></article>
+
+        <article class="card animos">
+            <h2>No te dejes ganar Claudia</h2>
+            <p>usa tu musica favorita para entrenar</p></article>
+        <article class="card animos">
+            <h2>Piensa en lo que ya llevas</h2>
+            <p>No te decaigas, recuerda tu proceso</p></article>
+        <article class="card alimentacion">
+            <h2>El agua hace magia?</h2>
+            <p>si</p></article>
+        <article class="card Tips">
+            <h2>Entrena en casa</h2>
+            <p>a cualquier horario, sin excusas.</p></article>
+        <article class="card animos">
+            <h2>Una experienza para leer</h2>
+            <p>Casos de éxito que inspiran.</p></article>
+        <article class="card alimentacion">
+            <h2>Regula la azucar artificial</h2>
+            <p>Planea tu semana.</p></article>
+        <article class="card Tips">
+            <h2>La flexibilidad es un proceso</h2>
+            <p>Mientras mas practiques, mas ganas</p></article>
+        <article class="card animos">
+            <h2>Sé constante</h2>
+            <p>Trucos para mantener la constancia.</p></article>
+    
+      </div>
+  </section>
+    </section>
+
+  <!-- COMENTARIOS -->
+  <section class="comentarios">
+    <h3>Comentarios</h3>
+  
+    <div class="comentario">
+      <div class="avatar avatar-maria" data-inicial="M"></div>
+      <p><strong>Maria:</strong> El "no te dejes ganar claudia" es el mejor! jajaj</p>
+    </div>
+  
+    <div class="comentario">
+      <div class="avatar avatar-jose" data-inicial="JOS"></div>
+      <p><strong>Jose:</strong> Lo del Agua es verdad</p>
+    </div>
+  
+    <div class="comentario">
+      <div class="avatar avatar-Ani" data-inicial="Ani"></div>
+      <p><strong>Ani:</strong> La chia se volvio un infaltable en mis bebidas! ¡Gracias VitalFit!</p>
+    </div>
+  
+    <div class="comentario">
+      <div class="avatar avatar-Facu" data-inicial="F"></div>
+      <p><strong>Facu:</strong> No tenia nada de flexibilidad antes de comenzar mis clases, el proceso puede ser frustrante pero vale.</p>
+    </div>
+  </section>
+
+  <script src="js/blog.js"></script>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <div class="footer-contenedor">
+      
+      <!-- NEWSLETTER -->
+      <section class="newsletter">
+        <h3>Suscribite a nuestro newsletter</h3>
+        <form action="#" method="post">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+          <button type="submit">Suscribirse</button>
+        </form>
+      </section>
+  
+      <!-- REDES -->
+      <section class="redes">
+        <h3>Seguinos</h3>
+        <ul>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+          <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+        </ul>
+      </section>
+  
+      <!-- MAPA -->
+      <section class="mapa">
+        <h3>Encontranos acá</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29100.57265097854!2d-65.20831575!3d-24.256758549999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b00ad469ef345%3A0xf0fa5e23f119b94c!2zUGFscGFsw6EsIEp1anV5!5e0!3m2!1ses-419!2sar!4v1744059565798!5m2!1ses-419!2sar" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen 
+          loading="lazy"
+          aria-label="Mapa del gimnasio"
+        ></iframe>
+      </section>
+  
+    </div>
+  </footer>
+  
+
+  <!-- BOTÓN MODO OSCURO -->
+  <button id="darkToggle" aria-label="Alternar modo oscuro">🌙</button>
+
+  <script>
+    // JavaScript mínimo para Dark Mode
+    const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+  
+
+</body>
+</html>

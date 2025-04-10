@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clases VitalFit</title>
+  <link rel="stylesheet" href="/css/style_home.css" />
+  <link rel="stylesheet" href="/css/style_clases.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <!--logo_______________________________________________________________-->
+    <div class="logo" aria-label="Logo de VitalFit">
+        <svg width="60" height="60" viewBox="0 0 100 100" class="icono">
+            <rect x="10" y="40" width="20" height="20" rx="5" fill="currentColor" />
+            <rect x="35" y="45" width="30" height="10" rx="2" fill="currentColor" />
+            <rect x="70" y="40" width="20" height="20" rx="5" fill="currentColor" />
+        </svg>
+        <h1>Vital<span>Fit</span></h1>
+    </div>
+    <!--___________________________________________________________________-->
+    <nav>
+      <ul class="menu">
+        <li><a href="home.html">Inicio</a></li>
+    
+        <li class="submenu">
+          <a href="clases.html">Clases</a>
+          <ul class="dropdown">
+            <li><a href="#">Yoga</a></li>
+            <li><a href="#">Pilates</a></li>
+            <li><a href="#">Flexibilidad</a></li>
+            <li><a href="#">Barre</a></li>
+            <li><a href="#">Cardio</a></li>
+          </ul>
+        </li>
+    
+        <li><a href="entrenadores.html">Entrenadores</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="filtro-clases">
+    <h2>Nuestras clases</h2>
+  
+    <!-- INPUTS Y LABELS + CONTENEDOR DE CARDS -->
+    <div class="contenedor-filtro">
+      <!-- Inputs (ocultos) -->
+      <input type="radio" name="categoria" id="todos" checked>
+      <input type="radio" name="categoria" id="Pilates">
+      <input type="radio" name="categoria" id="Barre">
+      <input type="radio" name="categoria" id="Yoga">
+      <input type="radio" name="categoria" id="funcional">
+      <input type="radio" name="categoria" id="Cardio">
+      <input type="radio" name="categoria" id="Flex">
+  
+      <!-- Labels -->
+      <div class="filtros">
+        <label for="Pilates">Pilates</label>
+        <label for="Barre">Barre</label>
+        <label for="Yoga">Yoga</label>
+        <label for="funcional">Funcional</label>
+        <label for="Cardio">Cardio</label>
+        <label for="Flex">Flexibilidad</label>
+      </div>
+  
+      <!-- Tarjetas -->
+      <div class="clases">
+        <div class="card Pilates">
+          <img src="https://images.pexels.com/photos/8769166/pexels-photo-8769166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Pilates" alt="Clase de pilates">
+          <h3>Pilates</h3>
+          <p>Fortalecé tu cuerpo con ejercicios de bajo impacto que mejoran tu postura, fuerza y flexibilidad.</p>
+        </div>
+        <div class="card Barre">
+          <img src="https://i.pinimg.com/736x/76/33/b1/7633b12dde96bfeca58e76b7699c251c.jpg" alt="Clase de Barre">
+          <h3>Barre</h3>
+          <p>Fusionamos ballet, yoga y pilates en una clase dinámica para tonificar y alargar tus músculos.</p>
+        </div>
+        <div class="card Yoga">
+          <img src="https://images.pexels.com/photos/8436727/pexels-photo-8436727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Clase de Yoga">
+          <h3>Yoga</h3>
+          <p>Conectá cuerpo y mente a través de posturas, respiración y meditación.</p>
+        </div>
+        <div class="card funcional">
+          <img src="https://images.pexels.com/photos/6455813/pexels-photo-6455813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Clase de funcional">
+          <h3>Funcional</h3>
+          <p>Entrenamiento completo que trabaja todos los grupos musculares con circuitos intensos y divertidos.</p>
+        </div>
+        <div class="card Cardio">
+          <img src="https://images.pexels.com/photos/4944970/pexels-photo-4944970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Clase de Cardio">
+          <h3>Cardio</h3>
+          <p>Quemás calorías y mejorá tu resistencia cardiovascular con sesiones enérgicas.</p>
+        </div>
+        <div class="card Flex">
+          <img src="https://images.pexels.com/photos/8436683/pexels-photo-8436683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Clase de Flexibilidad">
+          <h3>Flexibilidad</h3>
+          <p>Aumentá tu rango de movimiento y prevení lesiones con estiramientos progresivos y controlados.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--galeria -->
+    <h2>Momentos en VitalFit</h2>
+  
+    <div class="galeria">
+      <div class="clase Pilates">
+            <img src="https://images.pexels.com/photos/18074999/pexels-photo-18074999/free-photo-of-mujer-deporte-ropa-de-deporte-haciendo-estiramientos.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Pilates">
+            <div class="overlay">Fortalecé tu cuerpo con movimientos suaves y controlados.
+                <h3>Pilates</h3>
+            </div>
+      </div>
+
+      <div class="clase Yoga">
+            <img src="https://images.pexels.com/photos/3768695/pexels-photo-3768695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Yoga">
+          <div class="overlay">Conectá mente y cuerpo con nuestras clases de Yoga.
+            <h3>Yoga</h3>
+          </div>
+      </div>
+
+      <div class="clase funcional">
+            <img src="https://images.pexels.com/photos/10365496/pexels-photo-10365496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Funcional">
+          <div class="overlay">Entrenamiento funcional para ganar fuerza y resistencia.
+            <h3>Funcional</h3>
+          </div>
+      </div>
+
+      <div class="clase funcional">
+            <img src="https://images.pexels.com/photos/25599826/pexels-photo-25599826/free-photo-of-mujer-ejercicio-entrenamiento-haciendo-ejercicio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Flexibilidad">
+          <div class="overlay">Mejorá tu elasticidad y postura con ejercicios suaves.
+            <h3>Flexibilidad</h3>
+          </div>
+      </div>
+     
+    </div>
+  </section>
+
+      
+  <section class="tabla-horarios">
+    <h2>Horarios Semanales</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Pilates</th>
+            <th>Yoga</th>
+            <th>Barre</th>
+            <th>Funcional</th>
+            <th>Cardio</th>
+            <th>Flex</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>09:00 - 10:00</td>
+            <td>08:00 - 09:00</td>
+            <td>08:00 - 09:00</td>
+            <td>08:00 - 09:00</td>
+            <td>08:00 - 09:00</td>
+            <td>08:00 - 09:00</td>
+          </tr>
+          <tr>
+            <td>Martes</td>
+            <td>13:00 - 14:00</td>
+            <td>10:00 - 11:00</td>
+            <td>13:00 - 14:00</td>
+            <td>10:00 - 11:00</td>
+            <td>13:00 - 14:00</td>
+            <td>10:00 - 11:00</td>
+          </tr>
+          <tr>
+            <td>Miercoles</td>
+            <td>16:00 - 17:00</td>
+            <td>10:00 - 11:00</td>
+            <td>16:00 - 17:00</td>
+            <td>10:00 - 11:00</td>
+            <td>16:00 - 17:00</td>
+            <td>10:00 - 11:00</td>
+          </tr>
+          <tr>
+            <td>Jueves</td>
+            <td>16:00 - 17:00</td>
+            <td>20:00 - 21:00</td>
+            <td>16:00 - 17:00</td>
+            <td>20:00 - 21:00</td>
+            <td>16:00 - 17:00</td>
+            <td>20:00 - 21:00</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>18:00 - 19:00</td>
+            <td>07:30 - 08:30</td>
+            <td>18:00 - 19:00</td>
+            <td>07:30 - 08:30</td>
+            <td>18:00 - 19:00</td>
+            <td>07:30 - 08:30</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <div class="footer-contenedor">
+      
+      <!-- NEWSLETTER -->
+      <section class="newsletter">
+        <h3>Suscribite a nuestro newsletter</h3>
+        <form action="#" method="post">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+          <button type="submit">Suscribirse</button>
+        </form>
+      </section>
+  
+      <!-- REDES -->
+      <section class="redes">
+        <h3>Seguinos</h3>
+        <ul>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+          <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+        </ul>
+      </section>
+  
+      <!-- MAPA -->
+      <section class="mapa">
+        <h3>Encontranos acá</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29100.57265097854!2d-65.20831575!3d-24.256758549999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b00ad469ef345%3A0xf0fa5e23f119b94c!2zUGFscGFsw6EsIEp1anV5!5e0!3m2!1ses-419!2sar!4v1744059565798!5m2!1ses-419!2sar" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen 
+          loading="lazy"
+          aria-label="Mapa del gimnasio"
+        ></iframe>
+      </section>
+  
+    </div>
+  </footer>
+  
+
+  <!-- BOTÓN MODO OSCURO -->
+  <button id="darkToggle" aria-label="Alternar modo oscuro">🌙</button>
+
+  <script>
+    // JavaScript mínimo para Dark Mode
+    const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+
+</body>
+</html>

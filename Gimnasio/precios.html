@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Planes VitalFit</title>
+  <link rel="stylesheet" href="/css/style_home.css" />
+  <link rel="stylesheet" href="/css/style_plan.css">
+  
+  <script src="/js/toggle_plan.js"></script>
+
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <!--logo_______________________________________________________________-->
+    <div class="logo" aria-label="Logo de VitalFit">
+        <svg width="60" height="60" viewBox="0 0 100 100" class="icono">
+            <rect x="10" y="40" width="20" height="20" rx="5" fill="currentColor" />
+            <rect x="35" y="45" width="30" height="10" rx="2" fill="currentColor" />
+            <rect x="70" y="40" width="20" height="20" rx="5" fill="currentColor" />
+        </svg>
+        <h1>Vital<span>Fit</span></h1>
+    </div>
+    <!--___________________________________________________________________-->
+    <nav>
+      <ul class="menu">
+        <li><a href="home.html">Inicio</a></li>
+    
+        <li class="submenu">
+          <a href="clases.html">Clases</a>
+          <ul class="dropdown">
+            <li><a href="#">Yoga</a></li>
+            <li><a href="#">Pilates</a></li>
+            <li><a href="#">Flexibilidad</a></li>
+            <li><a href="#">Barre</a></li>
+            <li><a href="#">Cardio</a></li>
+          </ul>
+        </li>
+    
+        <li><a href="entrenadores.html">Entrenadores</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="precios">
+    <h2>Planes VitalFit</h2>
+  
+    <div class="toggle-precio">
+      <input type="checkbox" id="switch-precio" hidden>
+      <label for="switch-precio" class="switch">
+        <span>Mensual</span>
+        <span class="slider"></span>
+        <span>Anual</span>
+      </label>
+    </div>
+  
+    <div class="tabla-planes">
+      <div class="plan">
+        <h3>Básico</h3>
+        <p class="precio" data-mensual="$5.000" data-anual="$50.000">$5.000</p>
+        <ul>
+          <li><span class="tooltip" data-tooltip="Acceso a zona cardio">✔ Acceso zona cardio</span></li>
+          <li><span class="tooltip" data-tooltip="3 clases por semana">✔ 3 clases/semana</span></li>
+          <li><span class="tooltip" data-tooltip="Sin seguimiento personalizado">✘ Seguimiento</span></li>
+        </ul>
+        <button>Elegir plan</button>
+      </div>
+  
+      <div class="plan destacado">
+        <h3>Premium</h3>
+        <p class="precio" data-mensual="$8.500" data-anual="$85.000">$8.500</p>
+        <ul>
+          <li><span class="tooltip" data-tooltip="Acceso total a sala de máquinas">✔ Sala completa</span></li>
+          <li><span class="tooltip" data-tooltip="Clases ilimitadas y seguimiento">✔ Clases ilimitadas</span></li>
+          <li><span class="tooltip" data-tooltip="Incluye rutinas personalizadas">✔ Rutina personalizada</span></li>
+        </ul>
+        <button>Elegir plan</button>
+      </div>
+  
+      <div class="plan">
+        <h3>Dance Pro</h3>
+        <p class="precio" data-mensual="$10.000" data-anual="$100.000">$10.000</p>
+        <ul>
+          <li><span class="tooltip" data-tooltip="todas las clases">✔ todas las clases</span></li>
+          <li><span class="tooltip" data-tooltip="Incluye control de alimentacion">✔ nutri</span></li>
+          <li><span class="tooltip" data-tooltip="Entrenamientos 1:1">✔ Personal Trainer</span></li>
+        </ul>
+        <button>Elegir plan</button>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <div class="footer-contenedor">
+      
+      <!-- NEWSLETTER -->
+      <section class="newsletter">
+        <h3>Suscribite a nuestro newsletter</h3>
+        <form action="#" method="post">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+          <button type="submit">Suscribirse</button>
+        </form>
+      </section>
+  
+      <!-- REDES -->
+      <section class="redes">
+        <h3>Seguinos</h3>
+        <ul>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+          <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+        </ul>
+      </section>
+  
+      <!-- MAPA -->
+      <section class="mapa">
+        <h3>Encontranos acá</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29100.57265097854!2d-65.20831575!3d-24.256758549999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b00ad469ef345%3A0xf0fa5e23f119b94c!2zUGFscGFsw6EsIEp1anV5!5e0!3m2!1ses-419!2sar!4v1744059565798!5m2!1ses-419!2sar" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen 
+          loading="lazy"
+          aria-label="Mapa del gimnasio"
+        ></iframe>
+      </section>
+  
+    </div>
+  </footer>
+  
+
+  <!-- BOTÓN MODO OSCURO -->
+  <button id="darkToggle" aria-label="Alternar modo oscuro">🌙</button>
+
+  <script>
+    // JavaScript mínimo para Dark Mode
+    const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+
+</body>
+</html>

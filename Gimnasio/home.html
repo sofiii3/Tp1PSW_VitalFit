@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gimnasio VitalFit</title>
+  <link rel="stylesheet" href="/css/style_home.css" />
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <!--logo_______________________________________________________________-->
+    <div class="logo" aria-label="Logo de VitalFit">
+        <svg width="60" height="60" viewBox="0 0 100 100" class="icono">
+            <rect x="10" y="40" width="20" height="20" rx="5" fill="currentColor" />
+            <rect x="35" y="45" width="30" height="10" rx="2" fill="currentColor" />
+            <rect x="70" y="40" width="20" height="20" rx="5" fill="currentColor" />
+        </svg>
+        <h1>Vital<span>Fit</span></h1>
+    </div>
+    <!--___________________________________________________________________-->
+    <nav>
+      <ul class="menu">
+        <li><a href="home.html">Inicio</a></li>
+    
+        <li class="submenu">
+          <a href="clases.html">Clases</a>
+          <ul class="dropdown">
+            <li><a href="#">Yoga</a></li>
+            <li><a href="#">Pilates</a></li>
+            <li><a href="#">Flexibilidad</a></li>
+            <li><a href="#">Barre</a></li>
+            <li><a href="#">Cardio</a></li>
+          </ul>
+        </li>
+    
+        <li><a href="entrenadores.html">Entrenadores</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <!-- SECCIÓN HERO -->
+    <section class="hero" aria-label="Bienvenida al gimnasio">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="/img/hero.mp4" type="video/mp4" />
+        Tu navegador no soporta video HTML5.
+      </video>
+      <div class="hero-overlay">
+        <h2 class="hero-text">Entrená con pasión. Viví VitalFit.</h2>
+      </div>
+    </section>
+
+
+    <!-- SECCIÓN PRINCIPAL CON SCROLL SNAP -->
+    <section class="scroll-section" id="clases">
+      <!-- CLASES DESTACADAS -->
+      <div class="clases-destacadas">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/8769166/pexels-photo-8769166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Pilates" />
+          <h4>Pilates</h4>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/76/33/b1/7633b12dde96bfeca58e76b7699c251c.jpg" alt="Barre" />
+          <h4>Barré</h4>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/8436727/pexels-photo-8436727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="yoga" />
+          <h4>Yoga</h4>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/6455813/pexels-photo-6455813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="funcional" />
+          <h4>Funcional</h4>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/4944970/pexels-photo-4944970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Cardio" />
+          <h4>Cardio</h4>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/8436683/pexels-photo-8436683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Flex" />
+          <h4>Flex</h4>
+        </div>
+      </div>
+
+      <!-- CONTADOR -->
+      <div class="contador" aria-label="Cantidad de socios satisfechos">
+        <span class="animado"></span> socios satisfechos
+      </div>
+      
+
+     <!-- CARRUSEL -->
+    <section class="carrusel" aria-label="Testimonios de clientes">
+      <h2 class="titulo-carrusel">Lo que nuestros clientes piensan</h2>
+        <div class="carrusel-inner">
+          <div class="testimonio">"¡Ambiente genial y profes top!" – Laura M.</div>
+          <div class="testimonio">"Mejoré mi flexibilidad, gracias VitalFit!" – Martín G.</div>
+          <div class="testimonio">"Las clases motivan un montón." – Sofía R.</div>
+        </div>
+    </section>
+
+  </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <div class="footer-contenedor">
+      
+      <!-- NEWSLETTER -->
+      <section class="newsletter">
+        <h3>Suscribite a nuestro newsletter</h3>
+        <form action="#" method="post">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+          <button type="submit">Suscribirse</button>
+        </form>
+      </section>
+  
+      <!-- REDES -->
+      <section class="redes">
+        <h3>Seguinos</h3>
+        <ul>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+          <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+        </ul>
+      </section>
+  
+      <!-- MAPA -->
+      <section class="mapa">
+        <h3>Encontranos acá</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29100.57265097854!2d-65.20831575!3d-24.256758549999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b00ad469ef345%3A0xf0fa5e23f119b94c!2zUGFscGFsw6EsIEp1anV5!5e0!3m2!1ses-419!2sar!4v1744059565798!5m2!1ses-419!2sar" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen 
+          loading="lazy"
+          aria-label="Mapa del gimnasio"
+        ></iframe>
+      </section>
+  
+    </div>
+  </footer>
+  
+
+  <!-- BOTÓN MODO OSCURO -->
+  <button id="darkToggle" aria-label="Alternar modo oscuro">🌙</button>
+
+  <script>
+    // JavaScript mínimo para Dark Mode
+    const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+
+</body>
+</html>
